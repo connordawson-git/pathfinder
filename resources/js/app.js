@@ -69,12 +69,12 @@ const router = new VueRouter
 // ### CHANGE ME - Hardcoded Site titles ###
 // #########################################
 router.beforeEach((to, from, next) => {
-    document.title = 'SPA - ' + to.meta.title;
+    document.title = 'Pathfinder - ' + to.meta.title;
 
     if (to.matched.some(record => record.meta.requiresAuth)) {
         if (window.localStorage.getItem('token') == null) {
             window.localStorage.setItem('requested_path', to.path);
-            document.title = 'SPA - Login';
+            document.title = 'Pathfinder - Login';
             next({
                 name: 'users.login',
             });
@@ -88,7 +88,7 @@ router.beforeEach((to, from, next) => {
 
         if (!user.user_role || user.user_role != 'admin') {
             window.localStorage.setItem('requested_path', to.path);
-            document.title = 'SPA - Login';
+            document.title = 'Pathfinder - Login';
             next({
                 name: 'users.login',
             });

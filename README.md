@@ -1,6 +1,6 @@
-## SPA Starter guide
+## PathfinderStarter guide
 
-A Single Page Application starter project
+A Single Page Application project
 
 It is built with:
 
@@ -24,7 +24,7 @@ Features:
 
 ### Setup Guide
 
-Clone the repo locally `git clone git@gitlab.com:contentdiscovered/spa-starter.git folder-name`
+Clone the repo locally
 
 Delete the hidden folder .git
 
@@ -48,8 +48,8 @@ Open /resources/js/app.js
 Open /resources/js/components/App/Header.vue 
 	- change the hardcoded site title in the <v-app-bar>
 
-`yarn install`
+`npm install`
 
-`yarn watch`
+`npm run watch`
 
 and finally `git init` to start your git repo

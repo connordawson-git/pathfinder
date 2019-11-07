@@ -15,9 +15,9 @@
         <v-app-bar class="menu" color="primary" app dark fixed clipped-left>
             <v-app-bar-nav-icon v-if="authenticated" @click="menu = !menu"></v-app-bar-nav-icon>
             <router-link v-if="authenticated" :to="{ name: 'pages.dashboard' }">
-                <v-toolbar-title class="menu__text white--text pl-3 pr-4">SPA</v-toolbar-title>
+                <v-toolbar-title class="menu__text white--text pl-3 pr-4">Pathfinder</v-toolbar-title>
             </router-link>
-            <v-toolbar-title v-else class="menu__text pl-3 pr-4">SPA</v-toolbar-title>
+            <v-toolbar-title v-else class="menu__text capatalize pl-3 pr-4">Pathfinder</v-toolbar-title>
             <v-spacer></v-spacer>
             <v-toolbar-items>
                 <v-btn text v-if="!authenticated" :to="{ name: 'users.login' }">Login</v-btn>

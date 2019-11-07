@@ -72,7 +72,7 @@ class LoginController extends Controller
             // grab the newly logged in user
             $user = User::where('email', $request->email)->first();
 
-            $tokenName = 'MediaHQ';
+            $tokenName = 'PathFinder';
 
             $data['token'] = $user->createToken($tokenName)->accessToken;
             $data['logged_in'] = true;

@@ -15,9 +15,6 @@ class PagesController extends Controller
     public function spa()
     {
         $settings = [];
-        //$settings = Setting::all()->pluck('value', 'key');
-
-        //return view('app')->with(['settings' => $settings->toJson()]);
         return view('app')->with(['settings' => json_encode($settings)]);
     }
 }

@@ -24060,14 +24060,16 @@ var render = function() {
                   _c(
                     "v-toolbar-title",
                     { staticClass: "menu__text white--text pl-3 pr-4" },
-                    [_vm._v("SPA")]
+                    [_vm._v("Pathfinder")]
                   )
                 ],
                 1
               )
-            : _c("v-toolbar-title", { staticClass: "menu__text pl-3 pr-4" }, [
-                _vm._v("SPA")
-              ]),
+            : _c(
+                "v-toolbar-title",
+                { staticClass: "menu__text capatalize pl-3 pr-4" },
+                [_vm._v("Pathfinder")]
+              ),
           _vm._v(" "),
           _c("v-spacer"),
           _vm._v(" "),
@@ -78740,14 +78742,14 @@ var router = new vue_router__WEBPACK_IMPORTED_MODULE_1__["default"]({
 // #########################################
 
 router.beforeEach(function (to, from, next) {
-  document.title = 'SPA - ' + to.meta.title;
+  document.title = 'Pathfinder - ' + to.meta.title;
 
   if (to.matched.some(function (record) {
     return record.meta.requiresAuth;
   })) {
     if (window.localStorage.getItem('token') == null) {
       window.localStorage.setItem('requested_path', to.path);
-      document.title = 'SPA - Login';
+      document.title = 'Pathfinder - Login';
       next({
         name: 'users.login'
       });
@@ -78763,7 +78765,7 @@ router.beforeEach(function (to, from, next) {
 
     if (!user.user_role || user.user_role != 'admin') {
       window.localStorage.setItem('requested_path', to.path);
-      document.title = 'SPA - Login';
+      document.title = 'Pathfinder - Login';
       next({
         name: 'users.login'
       });
@@ -79893,13 +79895,13 @@ function _arrayWithoutHoles(arr) { if (Array.isArray(arr)) { for (var i = 0, arr
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _layouts_Pages_Home_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/layouts/Pages/Home.vue */ "./resources/js/layouts/Pages/Home.vue");
+/* harmony import */ var _layouts_Pages_Home_vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @/layouts/Pages/Home.vue */ "./resources/js/layouts/Pages/Home.vue");
 /* harmony import */ var _layouts_Pages_Dashboard_vue__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/layouts/Pages/Dashboard.vue */ "./resources/js/layouts/Pages/Dashboard.vue");
 
 
 /* harmony default export */ __webpack_exports__["default"] = ([{
   path: '/',
-  component: _layouts_Pages_Home_vue__WEBPACK_IMPORTED_MODULE_2__["default"],
+  component: _layouts_Pages_Home_vue__WEBPACK_IMPORTED_MODULE_0__["default"],
   name: 'pages.home',
   meta: {
     title: 'Pathfinder'
@@ -80368,8 +80370,8 @@ var store = new vuex__WEBPACK_IMPORTED_MODULE_1__["default"].Store({
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/connordawson/projects/spa-starter/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /Users/connordawson/projects/spa-starter/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! /Users/connordawson/projects/pathfinder/resources/js/app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! /Users/connordawson/projects/pathfinder/resources/sass/app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
