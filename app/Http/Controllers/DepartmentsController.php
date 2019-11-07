@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use App\Department;
 use Illuminate\Http\Request;
-use App\Http\Requests\App\CreateDepartment;
-use App\Http\Requests\App\DeleteDepartment;
-use App\Http\Requests\App\UpdateDepartment;
+use App\Http\Requests\CreateDepartment;
+use App\Http\Requests\DeleteDepartment;
+use App\Http\Requests\UpdateDepartment;
 
 class DepartmentsController extends Controller
 {

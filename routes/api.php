@@ -41,8 +41,8 @@ Route::middleware(['role:admin'])->group(function () {
     // USERS
     Route::post('users', 'UsersController@create');
     // Departments
-    Route::get('api/departments', 'DepartmentsController@all');
-    Route::post('api/departments', 'DepartmentsController@create');
-    Route::delete('api/departments/{id}', 'DepartmentsController@delete');
-    Route::put('api/departments/{id}', 'DepartmentsController@update');
+    Route::get('/departments', 'DepartmentsController@all');
+    Route::post('/departments', 'DepartmentsController@create');
+    Route::delete('/departments/{id}', 'DepartmentsController@delete');
+    Route::put('/departments/{id}', 'DepartmentsController@update');
 });

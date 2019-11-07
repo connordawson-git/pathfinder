@@ -10,8 +10,7 @@ export default [
         name: 'departments.add',
         meta: {
             title: 'Add a department',
-            requiresAuth: true,
-            hasPermission: 'create department'
+            requiresAuth: true
         }
     },
     {
@@ -38,8 +37,7 @@ export default [
         name: 'departments.update',
         meta: {
             title: 'Edit Department Details',
-            requiresAuth: true,
-            hasPermission: 'update department'
+            requiresAuth: true
         }
     },
 ];

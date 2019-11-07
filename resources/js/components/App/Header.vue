@@ -10,7 +10,25 @@
                         <v-list-item-title>Dashboard</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
+
+                <v-list-item :to="{ 'name': 'departments.add' }">
+                    <v-list-item-content>
+                        <v-list-item-title>Add Department</v-list-item-title>
+                    </v-list-item-content>
+                    <v-list-item-action>
+                        <v-icon>mdi-sitemap</v-icon>
+                    </v-list-item-action>
+                </v-list-item>
+                <v-list-item :to="{ 'name': 'departments.list' }">
+                    <v-list-item-content>
+                        <v-list-item-title>List Departments</v-list-item-title>
+                    </v-list-item-content>
+                    <v-list-item-action>
+                        <v-icon>mdi-sitemap</v-icon>
+                    </v-list-item-action>
+                </v-list-item>
             </v-list>
+
         </v-navigation-drawer>
         <v-app-bar class="menu" color="primary" app dark fixed clipped-left>
             <v-app-bar-nav-icon v-if="authenticated" @click="menu = !menu"></v-app-bar-nav-icon>

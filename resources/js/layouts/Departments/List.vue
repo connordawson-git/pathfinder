@@ -58,7 +58,7 @@
                                             </v-btn>
                                         </template>
                                         <v-list>
-                                            <v-list-item v-if="hasPermission('delete department')">
+                                            <v-list-item >
                                                 <v-list-item-action>
                                                     <v-icon color="error">mdi-delete</v-icon>
                                                 </v-list-item-action>

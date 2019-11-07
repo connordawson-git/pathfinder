@@ -1947,6 +1947,24 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 
@@ -2782,6 +2800,46 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _store__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @/store */ "./resources/js/store/index.js");
 /* harmony import */ var _components_App_Loading_vue__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @/components/App/Loading.vue */ "./resources/js/components/App/Loading.vue");
 /* harmony import */ var _mixins_permissions__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @/mixins/permissions */ "./resources/js/mixins/permissions.js");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -26882,6 +26940,44 @@ var render = function() {
                       )
                     ],
                     1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-item",
+                    { attrs: { to: { name: "departments.add" } } },
+                    [
+                      _c(
+                        "v-list-item-content",
+                        [_c("v-list-item-title", [_vm._v("Add Department")])],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-item-action",
+                        [_c("v-icon", [_vm._v("mdi-sitemap")])],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-list-item",
+                    { attrs: { to: { name: "departments.list" } } },
+                    [
+                      _c(
+                        "v-list-item-content",
+                        [_c("v-list-item-title", [_vm._v("List Departments")])],
+                        1
+                      ),
+                      _vm._v(" "),
+                      _c(
+                        "v-list-item-action",
+                        [_c("v-icon", [_vm._v("mdi-sitemap")])],
+                        1
+                      )
+                    ],
+                    1
                   )
                 ],
                 1
@@ -27783,63 +27879,54 @@ var render = function() {
                                               _c(
                                                 "v-list",
                                                 [
-                                                  _vm.hasPermission(
-                                                    "delete department"
-                                                  )
-                                                    ? _c(
-                                                        "v-list-item",
+                                                  _c(
+                                                    "v-list-item",
+                                                    [
+                                                      _c(
+                                                        "v-list-item-action",
                                                         [
                                                           _c(
-                                                            "v-list-item-action",
+                                                            "v-icon",
+                                                            {
+                                                              attrs: {
+                                                                color: "error"
+                                                              }
+                                                            },
                                                             [
-                                                              _c(
-                                                                "v-icon",
-                                                                {
-                                                                  attrs: {
-                                                                    color:
-                                                                      "error"
-                                                                  }
-                                                                },
-                                                                [
-                                                                  _vm._v(
-                                                                    "mdi-delete"
-                                                                  )
-                                                                ]
-                                                              )
-                                                            ],
-                                                            1
-                                                          ),
-                                                          _vm._v(" "),
-                                                          _c(
-                                                            "v-list-item-content",
-                                                            [
-                                                              _c(
-                                                                "button",
-                                                                {
-                                                                  staticClass:
-                                                                    "btn btn-danger",
-                                                                  on: {
-                                                                    click: function(
-                                                                      $event
-                                                                    ) {
-                                                                      return _vm.onDelete(
-                                                                        props.item
-                                                                      )
-                                                                    }
-                                                                  }
-                                                                },
-                                                                [
-                                                                  _vm._v(
-                                                                    "Delete"
-                                                                  )
-                                                                ]
+                                                              _vm._v(
+                                                                "mdi-delete"
                                                               )
                                                             ]
                                                           )
                                                         ],
                                                         1
+                                                      ),
+                                                      _vm._v(" "),
+                                                      _c(
+                                                        "v-list-item-content",
+                                                        [
+                                                          _c(
+                                                            "button",
+                                                            {
+                                                              staticClass:
+                                                                "btn btn-danger",
+                                                              on: {
+                                                                click: function(
+                                                                  $event
+                                                                ) {
+                                                                  return _vm.onDelete(
+                                                                    props.item
+                                                                  )
+                                                                }
+                                                              }
+                                                            },
+                                                            [_vm._v("Delete")]
+                                                          )
+                                                        ]
                                                       )
-                                                    : _vm._e(),
+                                                    ],
+                                                    1
+                                                  ),
                                                   _vm._v(" "),
                                                   _c(
                                                     "v-list-item",
@@ -27905,7 +27992,7 @@ var render = function() {
                                   ],
                                   null,
                                   false,
-                                  3799519526
+                                  3871022484
                                 )
                               })
                             ],
@@ -28221,6 +28308,127 @@ var render = function() {
                           _c("strong", [_vm._v(_vm._s(_vm.user.name))]),
                           _vm._v("!\n                ")
                         ]
+                      )
+                    ],
+                    1
+                  )
+                ],
+                1
+              ),
+              _vm._v(" "),
+              _c(
+                "v-row",
+                { attrs: { justify: "center" } },
+                [
+                  _c(
+                    "v-col",
+                    { attrs: { cols: "12", sm: "9", md: "6", lg: "3" } },
+                    [
+                      _c(
+                        "v-card",
+                        {
+                          staticClass: "fill-height title-highlight",
+                          attrs: { to: { name: "users.add" } }
+                        },
+                        [
+                          _c(
+                            "v-img",
+                            {
+                              staticClass: "white--text align-end",
+                              attrs: {
+                                gradient:
+                                  "to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)",
+                                height: "200",
+                                "max-height": "200",
+                                src:
+                                  "https://images.pexels.com/photos/533189/pexels-photo-533189.jpeg?cs=srgb&dl=chalk-company-conceptual-533189.jpg&fm=jpg",
+                                width: "auto"
+                              }
+                            },
+                            [
+                              _c(
+                                "v-card-title",
+                                { staticClass: "align-end py-0" },
+                                [
+                                  _c(
+                                    "span",
+                                    { staticClass: "title" },
+                                    [
+                                      _c(
+                                        "v-icon",
+                                        { attrs: { dark: "", "pb-3": "" } },
+                                        [_vm._v("mdi-account-plus")]
+                                      ),
+                                      _vm._v(
+                                        "\n                                Add User\n                            "
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
+                      )
+                    ],
+                    1
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "v-col",
+                    { attrs: { cols: "12", sm: "9", md: "6", lg: "3" } },
+                    [
+                      _c(
+                        "v-card",
+                        {
+                          staticClass: "fill-height title-highlight",
+                          attrs: { to: { name: "departments.add" } }
+                        },
+                        [
+                          _c(
+                            "v-img",
+                            {
+                              staticClass: "white--text align-end",
+                              attrs: {
+                                gradient:
+                                  "to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)",
+                                height: "200",
+                                "max-height": "200",
+                                src:
+                                  "https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500",
+                                width: "auto"
+                              }
+                            },
+                            [
+                              _c(
+                                "v-card-title",
+                                { staticClass: "align-end py-0" },
+                                [
+                                  _c(
+                                    "span",
+                                    { staticClass: "title" },
+                                    [
+                                      _c(
+                                        "v-icon",
+                                        { attrs: { dark: "", "pb-3": "" } },
+                                        [_vm._v("mdi-sitemap")]
+                                      ),
+                                      _vm._v(
+                                        "\n                                Add Department\n                            "
+                                      )
+                                    ],
+                                    1
+                                  )
+                                ]
+                              )
+                            ],
+                            1
+                          )
+                        ],
+                        1
                       )
                     ],
                     1
@@ -84183,8 +84391,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'departments.add',
   meta: {
     title: 'Add a department',
-    requiresAuth: true,
-    hasPermission: 'create department'
+    requiresAuth: true
   }
 }, {
   path: '/departments/list',
@@ -84208,8 +84415,7 @@ __webpack_require__.r(__webpack_exports__);
   name: 'departments.update',
   meta: {
     title: 'Edit Department Details',
-    requiresAuth: true,
-    hasPermission: 'update department'
+    requiresAuth: true
   }
 }]);
 

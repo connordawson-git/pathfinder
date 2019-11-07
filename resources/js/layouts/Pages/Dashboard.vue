@@ -14,6 +14,46 @@
                     </v-alert>
                 </v-col>
             </v-row>
+            <v-row justify="center">
+                <v-col  cols="12" sm="9" md="6" lg="3">
+                    <v-card class="fill-height title-highlight" :to="{ 'name': 'users.add' }">
+                        <v-img
+                            class="white--text align-end"
+                            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                            height="200"
+                            max-height="200"
+                            src="https://images.pexels.com/photos/533189/pexels-photo-533189.jpeg?cs=srgb&dl=chalk-company-conceptual-533189.jpg&fm=jpg"
+                            width="auto"
+                        >
+                            <v-card-title class="align-end py-0">
+                                <span class="title">
+                                    <v-icon dark pb-3>mdi-account-plus</v-icon>
+                                    Add User
+                                </span>
+                            </v-card-title>
+                        </v-img>
+                    </v-card>
+                    </v-col>
+                    <v-col  cols="12" sm="9" md="6" lg="3">
+                    <v-card class="fill-height title-highlight" :to="{ 'name': 'departments.add' }">
+                        <v-img
+                            class="white--text align-end"
+                            gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+                            height="200"
+                            max-height="200"
+                            src="https://images.pexels.com/photos/373076/pexels-photo-373076.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
+                            width="auto"
+                        >
+                            <v-card-title class="align-end py-0">
+                                <span class="title">
+                                    <v-icon dark pb-3>mdi-sitemap</v-icon>
+                                    Add Department
+                                </span>
+                            </v-card-title>
+                        </v-img>
+                    </v-card>
+                </v-col>
+            </v-row>
         </div>
     </v-container>
 </template>
