@@ -4,7 +4,7 @@
         <v-content>
             <router-view></router-view>
         </v-content>
-        <v-footer class="footer hidden-sm-and-down" app>
+        <v-footer class="footer" app>
             <v-row>
                 <v-col
                     py-3
