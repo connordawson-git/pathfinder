@@ -15,4 +15,10 @@ class Department extends Model
         'department'
     ];
 
+    /** 
+     * Get the users in a department.
+     */
+    public function user() {
+        return $this->hasMany('App\User');
+    }
 }
