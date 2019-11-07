@@ -10,23 +10,31 @@
                         <v-list-item-title>Dashboard</v-list-item-title>
                     </v-list-item-content>
                 </v-list-item>
-
-                <v-list-item :to="{ 'name': 'departments.add' }">
-                    <v-list-item-content>
-                        <v-list-item-title>Add Department</v-list-item-title>
-                    </v-list-item-content>
-                    <v-list-item-action>
-                        <v-icon>mdi-sitemap</v-icon>
-                    </v-list-item-action>
-                </v-list-item>
-                <v-list-item :to="{ 'name': 'departments.list' }">
-                    <v-list-item-content>
-                        <v-list-item-title>List Departments</v-list-item-title>
-                    </v-list-item-content>
-                    <v-list-item-action>
-                        <v-icon>mdi-sitemap</v-icon>
-                    </v-list-item-action>
-                </v-list-item>
+                <v-list-group
+                prepend-icon="mdi-sitemap"
+                no-action>
+                    <template v-slot:activator>
+                        <v-list-item>
+                            <v-list-item-title>Departments</v-list-item-title>
+                        </v-list-item>
+                    </template>
+                    <v-list-item  :to="{ 'name': 'departments.add' }">
+                        <v-list-item-content>
+                            <v-list-item-title>Add</v-list-item-title>
+                        </v-list-item-content>
+                        <v-list-item-action>
+                            <v-icon>mdi-plus-circle-outline</v-icon>
+                        </v-list-item-action>
+                    </v-list-item>
+                    <v-list-item :to="{ 'name': 'departments.list' }">
+                        <v-list-item-content>
+                            <v-list-item-title>List</v-list-item-title>
+                        </v-list-item-content>
+                        <v-list-item-action>
+                            <v-icon>mdi-format-list-bulleted</v-icon>
+                        </v-list-item-action>
+                    </v-list-item>
+                </v-list-group>
             </v-list>
 
         </v-navigation-drawer>
