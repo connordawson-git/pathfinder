@@ -30,7 +30,10 @@ class DatabaseSeeder extends Seeder
             $adminPermissions,
             Permission::create(['guard_name' => 'api', 'name' => 'create user']),
             Permission::create(['guard_name' => 'api', 'name' => 'update user']),
-            Permission::create(['guard_name' => 'api', 'name' => 'delete user'])
+            Permission::create(['guard_name' => 'api', 'name' => 'delete user']),
+            Permission::create(['guard_name' => 'api', 'name' => 'create department']),
+            Permission::create(['guard_name' => 'api', 'name' => 'update department']),
+            Permission::create(['guard_name' => 'api', 'name' => 'delete department'])
         );
         $admin->syncPermissions($adminPermissions);
 

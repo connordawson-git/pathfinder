@@ -33,10 +33,16 @@ Route::middleware(['auth:api'])->group(function () {
     Route::get('users/roles', 'UsersController@roles');
     Route::post('users/change-password', 'UsersController@changePassword');
     Route::put('users/{id}', 'UsersController@update');
+    Route::get('departments/{id}', 'DepartmentsController@show');
 });
 
 
 Route::middleware(['role:admin'])->group(function () {
     // USERS
     Route::post('users', 'UsersController@create');
+    // Departments
+    Route::get('api/departments', 'DepartmentsController@all');
+    Route::post('api/departments', 'DepartmentsController@create');
+    Route::delete('api/departments/{id}', 'DepartmentsController@delete');
+    Route::put('api/departments/{id}', 'DepartmentsController@update');
 });
