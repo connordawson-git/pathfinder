@@ -7,6 +7,8 @@
         >
             <v-card class="mx-auto"
             max-width="400"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
             >
                 <v-img
                     class="white--text align-end"
@@ -29,6 +31,8 @@
         >
             <v-card class="mx-auto"
             max-width="400"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
             >
                 <v-img
                     class="white--text align-end"
@@ -51,6 +55,8 @@
         >
             <v-card class="mx-auto"
             max-width="400"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
             >
                 <v-img
                     class="white--text align-end"

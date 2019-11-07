@@ -1,6 +1,11 @@
 // Load Lodash
 window._ = require('lodash');
 
+//Animate on scroll
+import AOS from 'aos';
+import 'aos/dist/aos.css'; 
+AOS.init();
+
 // Load Vue
 window.Vue = require('vue');
 

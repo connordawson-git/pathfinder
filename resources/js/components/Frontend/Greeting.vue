@@ -17,7 +17,7 @@ export default {
 .hero {
     /* Sizing */
     width: 100vw;
-    height: 65vh;
+    height: 85vh;
     /* Flexbox stuff */
     display: flex;
     justify-content: center;
