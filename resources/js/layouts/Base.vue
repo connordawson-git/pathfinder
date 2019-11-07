@@ -4,11 +4,11 @@
         <v-content>
             <router-view></router-view>
         </v-content>
-        <v-footer class="footer" app>
+        <v-footer class="footer primary" app>
             <v-row>
                 <v-col
                     py-3
-                    class="text-center"
+                    class="text-center white--text"
                     cols="12">
                     &copy;{{ currentYear() }} <strong>Pathfinder</strong>
                 </v-col>

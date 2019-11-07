@@ -3352,7 +3352,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, "\n.hero[data-v-96ab244a] {\n    /* Sizing */\n    width: 100vw;\n    height: 65vh;\n    /* Flexbox stuff */\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n    /* Text styles */\n    text-align: center;\n    /* Background styles */\n    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 232, 232, 0.699)), to(rgba(0, 0, 0, 0.5))), url(https://images.unsplash.com/photo-1557992985-4178812c1369?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit);\n    background-image: linear-gradient(rgba(241, 232, 232, 0.699), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1557992985-4178812c1369?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit);\n    background-size: cover;\n    background-position: center center;\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n}\n.hero-inner[data-v-96ab244a] {\n    background: rgba(115, 149, 174, 0.9);\n    padding: 15px;\n    border-radius: 15px;\n    color: #fff;\n}\n.hero h1[data-v-96ab244a] {\n    /* Text styles */\n    font-size: 5em;\n    margin-top: 0;\n    margin-bottom: 0.5em;\n}\n@media only screen and (max-width: 959px) {\n.hero[data-v-96ab244a] {\n    /* Sizing */\n    height: 50vh;\n}\n.hero-inner[data-v-96ab244a] {\n    padding: 10px;\n    border-radius: 15px;\n}\n.hero h1[data-v-96ab244a] {\n    font-size: 2.5rem;\n}\n}\n", ""]);
+exports.push([module.i, "\n.hero[data-v-96ab244a] {\n    /* Sizing */\n    width: 100vw;\n    height: 65vh;\n    /* Flexbox stuff */\n    display: -webkit-box;\n    display: flex;\n    -webkit-box-pack: center;\n            justify-content: center;\n    -webkit-box-align: center;\n            align-items: center;\n    /* Text styles */\n    text-align: center;\n    /* Background styles */\n    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(241, 232, 232, 0.699)), to(rgba(0, 0, 0, 0.5))), url(https://images.unsplash.com/photo-1557992985-4178812c1369?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit);\n    background-image: linear-gradient(rgba(241, 232, 232, 0.699), rgba(0, 0, 0, 0.5)), url(https://images.unsplash.com/photo-1557992985-4178812c1369?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit);\n    background-size: cover;\n    background-position: center center;\n    background-repeat: no-repeat;\n    background-attachment: fixed;\n}\n.hero-inner[data-v-96ab244a] {\n    background: #65ccb8;\n    padding: 15px;\n    border-radius: 15px;\n    color: #fff;\n}\n.hero h1[data-v-96ab244a] {\n    /* Text styles */\n    font-size: 5em;\n    margin-top: 0;\n    margin-bottom: 0.5em;\n}\n@media only screen and (max-width: 959px) {\n.hero[data-v-96ab244a] {\n    /* Sizing */\n    height: 50vh;\n}\n.hero-inner[data-v-96ab244a] {\n    padding: 10px;\n    border-radius: 15px;\n}\n.hero h1[data-v-96ab244a] {\n    font-size: 2.5rem;\n}\n}\n", ""]);
 
 // exports
 
@@ -24727,7 +24727,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "v-footer",
-        { staticClass: "footer", attrs: { app: "" } },
+        { staticClass: "footer primary", attrs: { app: "" } },
         [
           _c(
             "v-row",
@@ -24735,7 +24735,7 @@ var render = function() {
               _c(
                 "v-col",
                 {
-                  staticClass: "text-center",
+                  staticClass: "text-center white--text",
                   attrs: { "py-3": "", cols: "12" }
                 },
                 [
@@ -79115,11 +79115,11 @@ var opts = {
   theme: {
     themes: {
       light: {
-        primary: '#000',
+        primary: '#182628',
         // Dark Purple
-        secondary: '#23AE84',
+        secondary: '#65ccb8',
         // Green
-        accent: '#63C3D1',
+        accent: '#57ba98',
         // light blue
         error: '#F3989B',
         // pastel red

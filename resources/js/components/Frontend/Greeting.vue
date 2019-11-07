@@ -32,7 +32,7 @@ export default {
     background-attachment: fixed;
 }
 .hero-inner {
-    background: rgba(115, 149, 174, 0.9);
+    background: #65ccb8;
     padding: 15px;
     border-radius: 15px;
     color: #fff;

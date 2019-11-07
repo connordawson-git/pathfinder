@@ -32,9 +32,9 @@ const opts = {
     theme: {
         themes: {
             light: {
-                primary: '#000',   // Dark Purple
-                secondary: '#23AE84', // Green
-                accent: '#63C3D1',    // light blue
+                primary: '#182628',   // Dark Purple
+                secondary: '#65ccb8', // Green
+                accent: '#57ba98',    // light blue
                 error: '#F3989B',     // pastel red
                 info: '#2196F3',      // (default) blue
                 success: '#4CAF50',   // (default) green
