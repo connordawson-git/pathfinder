@@ -41,7 +41,12 @@
         <v-app-bar class="menu" color="primary" app dark fixed clipped-left>
             <v-app-bar-nav-icon v-if="authenticated" @click="menu = !menu"></v-app-bar-nav-icon>
             <router-link  :to="{ name: 'pages.home' }">
-                <v-toolbar-title class="menu__text white--text pl-3 pr-4">Pathfinder</v-toolbar-title>
+                <v-img ></v-img>
+                <v-toolbar-title class="menu__text white--text pl-3 pr-4">
+                    <a href="/">
+                        <img src="img/logo.png" alt="">
+                    </a>
+                </v-toolbar-title>
             </router-link>
             <v-spacer></v-spacer>
             <v-toolbar-items>

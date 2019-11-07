@@ -43,17 +43,26 @@ export default {
     margin-top: 0;
     margin-bottom: 0.5em;
 }
+.hero p {
+    /* Text styles */
+    font-size: 3em;
+}
 @media only screen and (max-width: 959px) {
-.hero {
-    /* Sizing */
-    height: 50vh;
-}
-.hero-inner {
-    padding: 10px;
-    border-radius: 15px;
-}
-  .hero h1 {
-    font-size: 2.5rem;
-  }
+    .hero {
+        /* Sizing */
+        height: 50vh;
+    }
+    .hero-inner {
+        padding: 10px;
+        border-radius: 15px;
+    }
+    .hero h1 {
+        /* Text styles */
+        font-size: 3em;
+    }
+    .hero p {
+        /* Text styles */
+        font-size: 2em;
+    }
 }
 </style>
